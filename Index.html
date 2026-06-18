@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Futuro Tech — Economia & Finanças</title>
+    <style>
+        /* PALETA MINIMALISTA: PRETO, BRANCO E CINZA */
+        :root {
+            --bg-main: #0a0a0a;
+            --bg-card: #121212;
+            --border-color: #262626;
+            --text-primary: #ffffff;
+            --text-secondary: #a3a3a3;
+            --accent: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            padding: 0 1.5rem;
+        }
+
+        /* CONTAINER CENTRALIZADO */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* HEADER / NAV */
+        header {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 1.5rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text-primary);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 6rem 0 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        /* SEÇÕES PRINCIPAIS */
+        section {
+            padding: 4rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero h1 {
+                font-size: 4.5rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* CARDS / BLOCOS DE CONTEÚDO */
+        .block {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 4px;
+            transition: border-color 0.2s;
+        }
+
+        .block:hover {
+            border-color: #404040;
+        }
+
+        .block h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .block p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* LISTA SIMPLES */
+        .list-item {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .list-item:last-child {
+            border-bottom: none;
+        }
+
+        .list-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .list-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* BADGE / TAGS */
+        .badge {
+            display: inline-block;
+            background: #262626;
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.25rem 0.5rem;
+            border-radius: 2px;
+            margin-bottom: 1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="brand">Economia & Tecnologia - Elton</div>
+            <nav>
+                <a href="#faculdades">Onde Estudar</a>
+                <a href="#rotina">Rotina Atual</a>
+                <a href="#tech">Uso da Tecnologia</a>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <h1>Economia focada em Mercado Financeiro.</h1>
+            <p>Meu plano de carreira para trabalhar com análise, investimentos e as ferramentas que aceleram e automatizam esse mercado.</p>
+        </main>
+
+        <section id="faculdades">
+            <h2>Onde pretendo cursar</h2>
+            <p class="subtitle">Análise das duas opções que fazem mais sentido para o meu objetivo.</p>
+            
+            <div class="section-grid">
+                <div class="block">
+                    <span class="badge">01</span>
+                    <h3>Faculdade do Primo Rico (Finclass)</h3>
+                    <p>O foco aqui é direto ao ponto: mercado financeiro na prática, um bom networking com quem já opera grandes fundos e grade atualizada com o ecossistema digital atual.</p>
+                </div>
+                
+                <div class="block">
+                    <span class="badge">02</span>
+                    <h3>UNITAU (Taubaté)</h3>
+                    <p>A vantagem é a formação acadêmica acessível, tradicional e o peso do diploma na região. Dá uma base muito forte em teoria econômica clássica, estatística e matemática financeira pura.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rotina">
+            <h2>O que estou fazendo hoje</h2>
+            <p class="subtitle">Meus passos atuais fora da escola para construir essa base.</p>
+            
+            <div>
+                <div class="list-item">
+                    <h4>Estudo Autónomo e Conteúdo de Mercado</h4>
+                    <p>Consumo diariamente conteúdos, podcasts e vídeos de quem vive o mercado na prática, como o Primo Rico (Thiago Nigro), Bruno Perini e outros analistas, para entender a realidade do ecossistema financeiro além da teoria.</p>
+                </div>
+                <div class="list-item">
+                    <h4>Acompanhamento do Cenário Econômico</h4>
+                    <p>Acompanho notícias sobre o fechamento do mercado, variações da taxa Selic, IPCA e inflação para começar a ligar os pontos de como a política e os juros afetam os investimentos no mundo real.</p>
+                </div>
+                <div class="list-item">
+                    <h4>Matemática Aplicada</h4>
+                    <p>Dedicando um tempo para revisar e avançar em conceitos de estatística e álgebra por conta própria, já que trabalhar com economia séria exige facilidade com números e lógica de risco.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech">
+            <h2>O papel da tecnologia na minha área</h2>
+            <p class="subtitle">Por que o economista do futuro não pode ser apenas o cara que lê planilhas estáticas.</p>
+            
+            <div class="section-grid">
+                <div class="block">
+                    <h3>Manipulação e Análise de Dados</h3>
+                    <p>A economia moderna utiliza linguagens como Python para analisar planilhas gigantes de dados macroeconômicos e históricos de ações em segundos, algo impossível de fazer no Excel tradicional.</p>
+                </div>
+                <div class="block">
+                    <h3>Automação e Modelos Preditivos</h3>
+                    <p>A tecnologia entra para criar modelos estatísticos que simulam crises, calculam riscos de carteiras de investimento de forma automática e identificam distorções de preços em tempo real.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>Plano Acadêmico & Profissional</div>
+            <div>Elton Neves Migotto</div>
+            <div>2026</div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
